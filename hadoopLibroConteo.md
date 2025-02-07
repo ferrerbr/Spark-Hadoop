@@ -1,4 +1,4 @@
-##Configuracion de  un entorno de Hadoop utilizando Docker,  realizar un proceso de ingesta de datos (subida de un archivo de texto a HDFS) y ejecución de un trabajo MapReduce para contar las palabras en el archivo
+## Configuracion de  un entorno de Hadoop utilizando Docker,  realizar un proceso de ingesta de datos (subida de un archivo de texto a HDFS) y ejecución de un trabajo MapReduce para contar las palabras en el archivo
 ### ejercicio con el libro Alicia en el pais de las maravillas 
 ##### 1. pull docker image
 
