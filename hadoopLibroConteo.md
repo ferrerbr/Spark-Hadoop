@@ -26,7 +26,7 @@ sudo ./start-container.sh
 ```
 **output:**
 
-![Texto](hadoopLibroConteo/4)
+![Texto](hadoopLibroConteo/4.jpeg)
 
 
 - Iniciar con 2  esclavos y un maestro
