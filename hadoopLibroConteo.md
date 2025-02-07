@@ -60,7 +60,7 @@ tar -czvf input/odisea.tar.gz odisea.txt
 -z: Comprimir con gzip.
 -v: Progreso del proceso.
 -f: Especificar nombre del archivo.
-![Texto](hadoopLibroConteo/8)
+![Texto](hadoopLibroConteo/8.jpeg)
 
 
 ##### 9. Revisar los tamaños de nuestros archivos
@@ -86,7 +86,7 @@ hdfs dfs –ls  input
 ```
 hdfs dfs -cat  input/alicesAdventures.tar.gz | zcat | tail -n 20
 ```
-![Texto](hadoopLibroConteo/12)
+![Texto](hadoopLibroConteo/12.jpeg)
 
 ##### 13. Eliminar el archivo en HADOOP
 
@@ -105,7 +105,7 @@ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/sources/hadoop-mapreduce-examples
 ```
 hdfs dfs -cat output/part-r-00000
 ```
-![Texto](hadoopLibroConteo/13)
+![Texto](hadoopLibroConteo/13.jpeg)
 
 ### Ejercicio con un libro diferente Meditacions de Marco Aurelio [iniciaremos desde el paso 6 ]
 
@@ -115,7 +115,7 @@ hdfs dfs -cat output/part-r-00000
 ```
 wget https://www.gutenberg.org/cache/epub/2680/pg2680.txt
 ```
-![Texto](hadoopLibroConteo/B6)
+![Texto](hadoopLibroConteo/B6.jpeg)
 
 ##### 7. Crear un directorio
 
@@ -140,7 +140,7 @@ tar -czvf input/meditations.tar.gz odisea.txt
 ```
 ls -flarts input
 ```
-![Texto](hadoopLibroConteo/B9)
+![Texto](hadoopLibroConteo/B9.jpeg)
 ##### 10. Crear y mover  directorio input al DFS de  HADOOP
 
 ```
@@ -153,14 +153,14 @@ hdfs dfs -put input
 ```
 hdfs dfs –ls  input
 ```
-![Texto](hadoopLibroConteo/B11)
+![Texto](hadoopLibroConteo/B11.jpeg)
 
 ##### 12. Leer las primeras lineas de nuestro archivo en HADOOP
 
 ```
 hdfs dfs -cat  input/meditations.tar.gz | zcat | tail -n 20
 ```
-![Texto](hadoopLibroConteo/B12)
+![Texto](hadoopLibroConteo/B12.jpeg)
 
 ##### 13. Eliminar el archivo en HADOOP
 
@@ -179,4 +179,4 @@ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/sources/hadoop-mapreduce-examples
 ```
 hdfs dfs -cat output/part-r-00000
 ```
-![Texto](hadoopLibroConteo/B13)
+![Texto](hadoopLibroConteo/B13.jpeg)
