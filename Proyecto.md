@@ -1,8 +1,18 @@
-# Proceso ETL con Hadoop dentro de un cluster de Amazon ERM 
+# Proceso ETL con Hadoop dentro de un cluster de Amazon EMR 
 ---
+El objetivo de este proyecto es  realizar un porcesamiento de los datos por lotes  para poder encontrar coincidencias dentro  del archivo con cadenas de texto
 
-### Extraccion  
-para este proyecto se uso un DataSet con regoistros logs de peticiones API  de la pagina  https://www.kaggle.com/datasets/eliasdabbas/web-server-access-logs
+GET /image/
+POST
+error
+
+Decidi usar Hadoop dentro del cluster de EMR para que el porceamiento fuera eficaz ya que  se cuenta con tres instancia , una mestra y dos esclavas  a diferencia de la instancia de ubuntu que levantamos individualmente
+el matro y los esclavos se encontraban dentro de contenedores 
+
+--
+
+## Extraccion  
+para este proyecto se uso un DataSet con registros de logs de peticiones API  de la pagina  https://www.kaggle.com/datasets/eliasdabbas/web-server-access-logs
 
 ##### 1. Subir el archivo a un bucket de S3 en formato .bz2 , este formato de compresion es soportada por hadoop y respeta el formato del texto 
 ![Texto](hadoopLibroConteo/erm.jpeg)
@@ -32,7 +42,7 @@ puedes verificar que el contenido se encuentra con
 hdfs dfs -ls brandom
 ```
 
-### Transformacion o procesamiento de los datos  
+## Transformacion o procesamiento de los datos  
 
 ##### 5. Realizar el conteo de palabras mediantante MapReduce
 diseñado para procesar grandes volúmenes de datos en paralelo y de manera distribuida en un clúster de computadoras
@@ -98,7 +108,7 @@ hdfs dfs -ls brandon
 ```
 ![Texto](hadoopLibroConteo/erm17.1.jpeg)
 
-### Carga
+## Carga
 ##### 11. Cargamos los archivo en un bucket s3
 
 cargamos los archivo en un bucket s3 en este caso usaremos el mismo bucket donde se encuentra nuestro archivo origina .log.gz2 
@@ -119,3 +129,14 @@ hdfs dfs -cp brandon/salida_error.txt s3a://proyecto-final-spark-hadoop-data-eng
 ![Texto](hadoopLibroConteo/erm17.jpeg)
 
  una vez qui  podemos descargarlos 
+
+ --- 
+ Resultados y conclusiones 
+ Aunque Hadoop trabaja en memoria el tiempo de procesameinto de el archivo fue de 3-3.5 min por  cada una de las busquedas lo cual no es mucho para un archivo de 3.5 GB 
+
+Resultados :
+GET /image/      5682613
+POST              139155
+error            27678
+
+Gracias.
