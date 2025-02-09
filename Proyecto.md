@@ -128,8 +128,10 @@ hdfs dfs -cp brandon/salida_error.txt s3a://proyecto-final-spark-hadoop-data-eng
 
 ![Texto](hadoopLibroConteo/erm17.jpeg)
 
- una vez qui  podemos descargarlos 
-
+ una vez aqui  podemos descargarlos 
+ [Ver archivo GET /image/](salida_GET.txt)
+ [Ver archivo POST /image/](salida_POST.txt)
+ [Ver archivo error /image/](salida_error.txt)
  --- 
  Resultados y conclusiones 
  Aunque Hadoop trabaja en memoria el tiempo de procesameinto de el archivo fue de 3-3.5 min por  cada una de las busquedas lo cual no es mucho para un archivo de 3.5 GB 
