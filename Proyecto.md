@@ -114,6 +114,6 @@ hdfs dfs -cp brandon/salida_error.txt s3a://proyecto-final-spark-hadoop-data-eng
 
 ##### 12. Revisar nuestro Bucket s3  para verificar que los archivos existan
 
-![Texto](hadoopLibroConteo/erm17-carga.jpeg)
+![Texto](hadoopLibroConteo/erm17.jpeg)
 
  una vez qui  podemos descargarlos 
