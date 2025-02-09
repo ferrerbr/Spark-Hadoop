@@ -9,7 +9,7 @@ error
 Decidi usar Hadoop dentro del cluster de EMR para que el porceamiento fuera eficaz ya que  se cuenta con tres instancia , una mestra y dos esclavas  a diferencia de la instancia de ubuntu que levantamos individualmente
 el matro y los esclavos se encontraban dentro de contenedores 
 
---
+---
 
 ## Extraccion  
 para este proyecto se uso un DataSet con registros de logs de peticiones API  de la pagina  https://www.kaggle.com/datasets/eliasdabbas/web-server-access-logs
