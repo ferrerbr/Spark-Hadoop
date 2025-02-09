@@ -1,6 +1,8 @@
-## Proceso ETL con Hadoop dentro de un cluster de Amazon ERM 
-### Extracion  
-para este proyecto se uso un archivo de logs de peticiones API  de la pagina  https://www.kaggle.com/datasets/eliasdabbas/web-server-access-logs
+# Proceso ETL con Hadoop dentro de un cluster de Amazon ERM 
+---
+
+### Extraccion  
+para este proyecto se uso un DataSet con regoistros logs de peticiones API  de la pagina  https://www.kaggle.com/datasets/eliasdabbas/web-server-access-logs
 
 ##### 1. Subir el archivo a un bucket de S3 en formato .bz2 , este formato de compresion es soportada por hadoop y respeta el formato del texto 
 ![Texto](hadoopLibroConteo/erm.jpeg)
