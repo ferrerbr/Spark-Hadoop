@@ -7,7 +7,7 @@ POST
 error
 
 Decidi usar Hadoop dentro del cluster de EMR para que el porceamiento fuera eficaz ya que  se cuenta con tres instancia , una mestra y dos esclavas  a diferencia de la instancia de ubuntu que levantamos individualmente
-el matro y los esclavos se encontraban dentro de contenedores 
+el maestro y los esclavos se encontraban dentro de contenedores.
 
 ---
 
