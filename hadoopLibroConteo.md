@@ -180,3 +180,6 @@ hadoop jar $HADOOP_HOME/share/hadoop/mapreduce/sources/hadoop-mapreduce-examples
 hdfs dfs -cat output/part-r-00000
 ```
 ![Texto](hadoopLibroConteo/B13.jpeg)
+
+
+.
