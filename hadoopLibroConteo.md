@@ -182,4 +182,4 @@ hdfs dfs -cat output/part-r-00000
 ![Texto](hadoopLibroConteo/B13.jpeg)
 
 
-.
+
